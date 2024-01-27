@@ -22,6 +22,8 @@ Public Class Form1
         PersonalizarBoton(btncanceles, 15)
         PersonalizarBoton(btnfachada, 15)
         PersonalizarBoton(btnespejo, 15)
+
+
     End Sub
     Private Sub PersonalizarBoton(boton As Button, radioEsquinas As Integer)
         Dim path As New GraphicsPath()
@@ -82,9 +84,6 @@ Public Class Form1
         Next
     End Sub
 
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
-        ' Puedes poner código adicional aquí si es necesario
-    End Sub
 
     Private Sub menu_close_Click(sender As Object, e As EventArgs) Handles menu_close.Click
         If vistaMenu = False Then
@@ -99,13 +98,77 @@ Public Class Form1
             vistaMenu = False
         End If
     End Sub
+    Private Sub btnbarandales_MouseEnter(sender As Object, e As EventArgs) Handles btnbarandales.MouseEnter
+        ' Cambia la apariencia cuando el mouse entra al botón
+        btnbarandales.Size = New Size(230, 190)
+        btnbarandales.BackgroundImageLayout = ImageLayout.Stretch ' O el diseño que desees
+        btnbarandales.Location = New Point(239, 110)
+        PersonalizarBoton(btnbarandales, 15)
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles btnbarandales.Click
-        Me.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width - 2, Height - 2, 20, 20))
+    End Sub
+
+    Private Sub btnbarandales_MouseLeave(sender As Object, e As EventArgs) Handles btnbarandales.MouseLeave
+        ' Restaura la apariencia original cuando el mouse sale del botón
+        btnbarandales.Size = New Size(211, 165)
+        btnbarandales.BackgroundImageLayout = ImageLayout.Stretch
+        btnbarandales.Location = New Point(251, 124)
+        PersonalizarBoton(btnbarandales, 15)
     End Sub
 
 
 
+    Private Sub btnbarandales_Click_1(sender As Object, e As EventArgs) Handles btnbarandales.Click
+        btnbarandales.BackgroundImageLayout = ImageLayout.Stretch ' O el diseño que desees
+        btnbarandales.Location = New Point(251, 124)
+        btnbarandales.Size = New Size(211, 165)
+
+        PersonalizarBoton(btnbarandales, 15)
+    End Sub
+    Private Sub btncanceles_MouseEnter(sender As Object, e As EventArgs) Handles btncanceles.MouseEnter
+        ' Cambia la apariencia cuando el mouse entra al botón
+        btncanceles.Size = New Size(230, 190)
+        btncanceles.BackgroundImageLayout = ImageLayout.Stretch ' O el diseño que desees
+        btncanceles.Location = New Point(509, 110)
+        PersonalizarBoton(btncanceles, 15)
+
+    End Sub
+
+    Private Sub btncanceles_MouseLeave(sender As Object, e As EventArgs) Handles btncanceles.MouseLeave
+        ' Restaura la apariencia original cuando el mouse sale del botón
+        btncanceles.Size = New Size(211, 165)
+        btncanceles.BackgroundImageLayout = ImageLayout.Stretch
+        btncanceles.Location = New Point(509, 122)
+        PersonalizarBoton(btncanceles, 15)
+    End Sub
+    Private Sub btncanceles_Click(sender As Object, e As EventArgs) Handles btncanceles.Click
+        btncanceles.BackgroundImageLayout = ImageLayout.Stretch ' O el diseño que desees
+        btncanceles.Size = New Size(211, 165)
+        btncanceles.Location = New Point(509, 122)
+        PersonalizarBoton(btncanceles, 15)
+    End Sub
+
+    Private Sub btnespejo_MouseEnter(sender As Object, e As EventArgs) Handles btnespejo.MouseEnter
+        ' Cambia la apariencia cuando el mouse entra al botón
+        btnespejo.Size = New Size(218, 190)
+        btnespejo.BackgroundImageLayout = ImageLayout.Stretch ' O el diseño que desees
+        btnespejo.Location = New Point(251, 333)
+        PersonalizarBoton(btnespejo, 15)
+
+    End Sub
+
+    Private Sub bbtnespejo_MouseLeave(sender As Object, e As EventArgs) Handles btnespejo.MouseLeave
+        ' Restaura la apariencia original cuando el mouse sale del botón
+        btnespejo.Size = New Size(199, 165)
+        btnespejo.BackgroundImageLayout = ImageLayout.Stretch
+        btnespejo.Location = New Point(251, 333)
+        PersonalizarBoton(btnespejo, 15)
+    End Sub
+    Private Sub btnespejo_Click(sender As Object, e As EventArgs) Handles btnespejo.Click
+        btnespejo.BackgroundImageLayout = ImageLayout.Stretch ' O el diseño que desees
+        btnespejo.Size = New Size(199, 165)
+        btnespejo.Location = New Point(251, 333)
+        PersonalizarBoton(btnespejo, 15)
+    End Sub
 End Class
 
 

@@ -23,26 +23,26 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.menu_close = New System.Windows.Forms.PictureBox()
+        Me.Pmenu = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Pperfil = New System.Windows.Forms.PictureBox()
+        Me.btnbarandales = New System.Windows.Forms.Button()
         Me.btnfachada = New System.Windows.Forms.Button()
         Me.btncanceles = New System.Windows.Forms.Button()
         Me.btnespejo = New System.Windows.Forms.Button()
         Me.btndomo = New System.Windows.Forms.Button()
         Me.btnventanas = New System.Windows.Forms.Button()
-        Me.btnbarandales = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Pperfil = New System.Windows.Forms.PictureBox()
-        Me.menu_close = New System.Windows.Forms.PictureBox()
-        Me.Pmenu = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        CType(Me.Pperfil, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.menu_close, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Pmenu, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        CType(Me.Pperfil, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -55,6 +55,26 @@ Partial Class Form1
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1105, 40)
         Me.Panel1.TabIndex = 0
+        '
+        'menu_close
+        '
+        Me.menu_close.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.flecha_down
+        Me.menu_close.Location = New System.Drawing.Point(12, 4)
+        Me.menu_close.Name = "menu_close"
+        Me.menu_close.Size = New System.Drawing.Size(37, 33)
+        Me.menu_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.menu_close.TabIndex = 1
+        Me.menu_close.TabStop = False
+        '
+        'Pmenu
+        '
+        Me.Pmenu.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.flecha_left
+        Me.Pmenu.Location = New System.Drawing.Point(163, 4)
+        Me.Pmenu.Name = "Pmenu"
+        Me.Pmenu.Size = New System.Drawing.Size(37, 33)
+        Me.Pmenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Pmenu.TabIndex = 0
+        Me.Pmenu.TabStop = False
         '
         'Panel2
         '
@@ -70,146 +90,6 @@ Partial Class Form1
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(200, 692)
         Me.Panel2.TabIndex = 1
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Location = New System.Drawing.Point(0, 161)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 8)
-        Me.GroupBox1.TabIndex = 4
-        Me.GroupBox1.TabStop = False
-        '
-        'btnfachada
-        '
-        Me.btnfachada.BackColor = System.Drawing.Color.LightCyan
-        Me.btnfachada.BackgroundImage = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.cubiertas
-        Me.btnfachada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnfachada.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.btnfachada.FlatAppearance.BorderSize = 0
-        Me.btnfachada.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnfachada.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnfachada.ForeColor = System.Drawing.Color.Black
-        Me.btnfachada.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnfachada.Location = New System.Drawing.Point(779, 122)
-        Me.btnfachada.Margin = New System.Windows.Forms.Padding(5)
-        Me.btnfachada.Name = "btnfachada"
-        Me.btnfachada.Padding = New System.Windows.Forms.Padding(5)
-        Me.btnfachada.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.btnfachada.Size = New System.Drawing.Size(211, 167)
-        Me.btnfachada.TabIndex = 15
-        Me.btnfachada.Text = "Canceles"
-        Me.btnfachada.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnfachada.UseVisualStyleBackColor = False
-        '
-        'btncanceles
-        '
-        Me.btncanceles.BackColor = System.Drawing.Color.LightCyan
-        Me.btncanceles.BackgroundImage = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.canceles
-        Me.btncanceles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncanceles.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.btncanceles.FlatAppearance.BorderSize = 0
-        Me.btncanceles.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btncanceles.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btncanceles.ForeColor = System.Drawing.Color.Black
-        Me.btncanceles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btncanceles.Location = New System.Drawing.Point(509, 122)
-        Me.btncanceles.Margin = New System.Windows.Forms.Padding(5)
-        Me.btncanceles.Name = "btncanceles"
-        Me.btncanceles.Padding = New System.Windows.Forms.Padding(5)
-        Me.btncanceles.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.btncanceles.Size = New System.Drawing.Size(211, 167)
-        Me.btncanceles.TabIndex = 14
-        Me.btncanceles.Text = "Canceles"
-        Me.btncanceles.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btncanceles.UseVisualStyleBackColor = False
-        '
-        'btnespejo
-        '
-        Me.btnespejo.BackColor = System.Drawing.Color.LightCyan
-        Me.btnespejo.BackgroundImage = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.espejos
-        Me.btnespejo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnespejo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.btnespejo.FlatAppearance.BorderSize = 0
-        Me.btnespejo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnespejo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnespejo.ForeColor = System.Drawing.Color.Black
-        Me.btnespejo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnespejo.Location = New System.Drawing.Point(239, 333)
-        Me.btnespejo.Margin = New System.Windows.Forms.Padding(5)
-        Me.btnespejo.Name = "btnespejo"
-        Me.btnespejo.Padding = New System.Windows.Forms.Padding(5)
-        Me.btnespejo.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.btnespejo.Size = New System.Drawing.Size(211, 167)
-        Me.btnespejo.TabIndex = 13
-        Me.btnespejo.Text = "Canceles"
-        Me.btnespejo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnespejo.UseVisualStyleBackColor = False
-        '
-        'btndomo
-        '
-        Me.btndomo.BackColor = System.Drawing.Color.LightCyan
-        Me.btndomo.BackgroundImage = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.domos
-        Me.btndomo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btndomo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.btndomo.FlatAppearance.BorderSize = 0
-        Me.btndomo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btndomo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btndomo.ForeColor = System.Drawing.Color.Black
-        Me.btndomo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btndomo.Location = New System.Drawing.Point(779, 333)
-        Me.btndomo.Margin = New System.Windows.Forms.Padding(5)
-        Me.btndomo.Name = "btndomo"
-        Me.btndomo.Padding = New System.Windows.Forms.Padding(5)
-        Me.btndomo.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.btndomo.Size = New System.Drawing.Size(211, 167)
-        Me.btndomo.TabIndex = 12
-        Me.btndomo.Text = "Canceles"
-        Me.btndomo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btndomo.UseVisualStyleBackColor = False
-        '
-        'btnventanas
-        '
-        Me.btnventanas.BackColor = System.Drawing.Color.LightCyan
-        Me.btnventanas.BackgroundImage = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.t_ventanas
-        Me.btnventanas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnventanas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.btnventanas.FlatAppearance.BorderSize = 0
-        Me.btnventanas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnventanas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnventanas.ForeColor = System.Drawing.Color.Black
-        Me.btnventanas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnventanas.Location = New System.Drawing.Point(509, 333)
-        Me.btnventanas.Margin = New System.Windows.Forms.Padding(5)
-        Me.btnventanas.Name = "btnventanas"
-        Me.btnventanas.Padding = New System.Windows.Forms.Padding(5)
-        Me.btnventanas.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.btnventanas.Size = New System.Drawing.Size(211, 167)
-        Me.btnventanas.TabIndex = 11
-        Me.btnventanas.Text = "Canceles"
-        Me.btnventanas.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnventanas.UseVisualStyleBackColor = False
-        '
-        'btnbarandales
-        '
-        Me.btnbarandales.BackColor = System.Drawing.Color.LightCyan
-        Me.btnbarandales.BackgroundImage = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.arandales1
-        Me.btnbarandales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnbarandales.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.btnbarandales.FlatAppearance.BorderSize = 0
-        Me.btnbarandales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnbarandales.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnbarandales.ForeColor = System.Drawing.Color.Black
-        Me.btnbarandales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnbarandales.Location = New System.Drawing.Point(239, 122)
-        Me.btnbarandales.Margin = New System.Windows.Forms.Padding(5)
-        Me.btnbarandales.Name = "btnbarandales"
-        Me.btnbarandales.Padding = New System.Windows.Forms.Padding(5)
-        Me.btnbarandales.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.btnbarandales.Size = New System.Drawing.Size(211, 167)
-        Me.btnbarandales.TabIndex = 9
-        Me.btnbarandales.Text = "Canceles"
-        Me.btnbarandales.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnbarandales.UseVisualStyleBackColor = False
         '
         'Button4
         '
@@ -280,6 +160,14 @@ Partial Class Form1
         Me.Button1.Text = "     Clientes"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Location = New System.Drawing.Point(0, 161)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(200, 8)
+        Me.GroupBox1.TabIndex = 4
+        Me.GroupBox1.TabStop = False
+        '
         'Pperfil
         '
         Me.Pperfil.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.t_logo_deaalum
@@ -290,25 +178,130 @@ Partial Class Form1
         Me.Pperfil.TabIndex = 1
         Me.Pperfil.TabStop = False
         '
-        'menu_close
+        'btnbarandales
         '
-        Me.menu_close.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.flecha_down
-        Me.menu_close.Location = New System.Drawing.Point(12, 4)
-        Me.menu_close.Name = "menu_close"
-        Me.menu_close.Size = New System.Drawing.Size(37, 33)
-        Me.menu_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.menu_close.TabIndex = 1
-        Me.menu_close.TabStop = False
+        Me.btnbarandales.BackColor = System.Drawing.Color.LightCyan
+        Me.btnbarandales.BackgroundImage = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.arandales
+        Me.btnbarandales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnbarandales.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.btnbarandales.FlatAppearance.BorderSize = 0
+        Me.btnbarandales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnbarandales.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnbarandales.ForeColor = System.Drawing.Color.Black
+        Me.btnbarandales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnbarandales.Location = New System.Drawing.Point(251, 124)
+        Me.btnbarandales.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnbarandales.Name = "btnbarandales"
+        Me.btnbarandales.Padding = New System.Windows.Forms.Padding(5)
+        Me.btnbarandales.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.btnbarandales.Size = New System.Drawing.Size(199, 165)
+        Me.btnbarandales.TabIndex = 11
+        Me.btnbarandales.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnbarandales.UseVisualStyleBackColor = False
         '
-        'Pmenu
+        'btnfachada
         '
-        Me.Pmenu.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.flecha_left
-        Me.Pmenu.Location = New System.Drawing.Point(163, 4)
-        Me.Pmenu.Name = "Pmenu"
-        Me.Pmenu.Size = New System.Drawing.Size(37, 33)
-        Me.Pmenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Pmenu.TabIndex = 0
-        Me.Pmenu.TabStop = False
+        Me.btnfachada.BackColor = System.Drawing.Color.LightCyan
+        Me.btnfachada.BackgroundImage = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.cubiertas
+        Me.btnfachada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnfachada.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.btnfachada.FlatAppearance.BorderSize = 0
+        Me.btnfachada.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnfachada.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnfachada.ForeColor = System.Drawing.Color.Black
+        Me.btnfachada.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnfachada.Location = New System.Drawing.Point(779, 122)
+        Me.btnfachada.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnfachada.Name = "btnfachada"
+        Me.btnfachada.Padding = New System.Windows.Forms.Padding(5)
+        Me.btnfachada.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.btnfachada.Size = New System.Drawing.Size(211, 167)
+        Me.btnfachada.TabIndex = 15
+        Me.btnfachada.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnfachada.UseVisualStyleBackColor = False
+        '
+        'btncanceles
+        '
+        Me.btncanceles.BackColor = System.Drawing.Color.LightCyan
+        Me.btncanceles.BackgroundImage = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.canceles
+        Me.btncanceles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btncanceles.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.btncanceles.FlatAppearance.BorderSize = 0
+        Me.btncanceles.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btncanceles.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btncanceles.ForeColor = System.Drawing.Color.Black
+        Me.btncanceles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btncanceles.Location = New System.Drawing.Point(509, 122)
+        Me.btncanceles.Margin = New System.Windows.Forms.Padding(5)
+        Me.btncanceles.Name = "btncanceles"
+        Me.btncanceles.Padding = New System.Windows.Forms.Padding(5)
+        Me.btncanceles.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.btncanceles.Size = New System.Drawing.Size(211, 167)
+        Me.btncanceles.TabIndex = 14
+        Me.btncanceles.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btncanceles.UseVisualStyleBackColor = False
+        '
+        'btnespejo
+        '
+        Me.btnespejo.BackColor = System.Drawing.Color.LightCyan
+        Me.btnespejo.BackgroundImage = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.espejos
+        Me.btnespejo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnespejo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.btnespejo.FlatAppearance.BorderSize = 0
+        Me.btnespejo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnespejo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnespejo.ForeColor = System.Drawing.Color.Black
+        Me.btnespejo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnespejo.Location = New System.Drawing.Point(251, 333)
+        Me.btnespejo.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnespejo.Name = "btnespejo"
+        Me.btnespejo.Padding = New System.Windows.Forms.Padding(5)
+        Me.btnespejo.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.btnespejo.Size = New System.Drawing.Size(199, 165)
+        Me.btnespejo.TabIndex = 13
+        Me.btnespejo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnespejo.UseVisualStyleBackColor = False
+        '
+        'btndomo
+        '
+        Me.btndomo.BackColor = System.Drawing.Color.LightCyan
+        Me.btndomo.BackgroundImage = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.domos
+        Me.btndomo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btndomo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.btndomo.FlatAppearance.BorderSize = 0
+        Me.btndomo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndomo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btndomo.ForeColor = System.Drawing.Color.Black
+        Me.btndomo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btndomo.Location = New System.Drawing.Point(779, 333)
+        Me.btndomo.Margin = New System.Windows.Forms.Padding(5)
+        Me.btndomo.Name = "btndomo"
+        Me.btndomo.Padding = New System.Windows.Forms.Padding(5)
+        Me.btndomo.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.btndomo.Size = New System.Drawing.Size(211, 167)
+        Me.btndomo.TabIndex = 12
+        Me.btndomo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btndomo.UseVisualStyleBackColor = False
+        '
+        'btnventanas
+        '
+        Me.btnventanas.BackColor = System.Drawing.Color.LightCyan
+        Me.btnventanas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnventanas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.btnventanas.FlatAppearance.BorderSize = 0
+        Me.btnventanas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnventanas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnventanas.ForeColor = System.Drawing.Color.Black
+        Me.btnventanas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnventanas.Location = New System.Drawing.Point(509, 333)
+        Me.btnventanas.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnventanas.Name = "btnventanas"
+        Me.btnventanas.Padding = New System.Windows.Forms.Padding(5)
+        Me.btnventanas.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.btnventanas.Size = New System.Drawing.Size(211, 167)
+        Me.btnventanas.TabIndex = 11
+        Me.btnventanas.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnventanas.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -329,10 +322,10 @@ Partial Class Form1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "DISEÑO DE FORMULARIO"
         Me.Panel1.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        CType(Me.Pperfil, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.menu_close, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Pmenu, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        CType(Me.Pperfil, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

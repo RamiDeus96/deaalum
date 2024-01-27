@@ -113,6 +113,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Cristel_canceles_aluminio_exteriores_tipos() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Cristel-canceles-aluminio-exteriores-tipos", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property cubiertas() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("cubiertas", resourceCulture)
@@ -216,6 +226,16 @@ Namespace My.Resources
         Friend ReadOnly Property t_ventanas() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("t-ventanas", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ventana() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ventana", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

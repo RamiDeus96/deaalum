@@ -47,6 +47,11 @@ Diseño_Menu_Despegable_Izquierdo
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.Cristel_canceles_aluminio_exteriores_tipos">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.cubiertas">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -98,6 +103,11 @@ Diseño_Menu_Despegable_Izquierdo
 </summary>
 </member>
 <member name="P:Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.t_ventanas">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.ventana">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
