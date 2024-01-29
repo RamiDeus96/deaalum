@@ -2,6 +2,7 @@
 Imports System.Drawing
 Imports System.Drawing.Drawing2D
 Imports System.Runtime.InteropServices
+Imports System.Windows
 Imports CustomControls.RJControls
 
 
@@ -123,6 +124,16 @@ Public Class Form1
         btnbarandales.Size = New Size(211, 165)
 
         PersonalizarBoton(btnbarandales, 15)
+
+        If Application.OpenForms.OfType(Of Cotizacion).Any() Then
+            ' Si ya está abierto, enfocar en él
+            Application.OpenForms.OfType(Of Cotizacion).First().Focus()
+        Else
+            ' Si no está abierto, crear una instancia y mostrarlo
+            Dim form2 As New Cotizacion()
+            form2.Show()
+            Me.Hide()
+        End If
     End Sub
     Private Sub btncanceles_MouseEnter(sender As Object, e As EventArgs) Handles btncanceles.MouseEnter
         ' Cambia la apariencia cuando el mouse entra al botón
@@ -168,6 +179,18 @@ Public Class Form1
         btnespejo.Size = New Size(199, 165)
         btnespejo.Location = New Point(251, 333)
         PersonalizarBoton(btnespejo, 15)
+    End Sub
+
+    Private Sub Pperfil_Click(sender As Object, e As EventArgs) Handles Pperfil.Click
+        If Application.OpenForms.OfType(Of Form1).Any() Then
+            ' Si ya está abierto, enfocar en él
+            Application.OpenForms.OfType(Of Form1).First().Focus()
+        Else
+            ' Si no está abierto, crear una instancia y mostrarlo
+            Dim form1 As New Form1()
+            form1.Show()
+            Me.Hide()
+        End If
     End Sub
 End Class
 

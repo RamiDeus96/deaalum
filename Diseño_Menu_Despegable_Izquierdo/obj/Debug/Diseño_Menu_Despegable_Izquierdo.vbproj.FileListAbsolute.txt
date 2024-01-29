@@ -20,3 +20,4 @@ C:\Users\Europiel\Desktop\Diseño_Menu_Despegable_Izquierdo\Diseño_Menu_Despega
 C:\Users\Europiel\Desktop\Diseño_Menu_Despegable_Izquierdo\Diseño_Menu_Despegable_Izquierdo\obj\Debug\Diseño_Menu_Despegable_Izquierdo.exe
 C:\Users\Europiel\Desktop\Diseño_Menu_Despegable_Izquierdo\Diseño_Menu_Despegable_Izquierdo\obj\Debug\Diseño_Menu_Despegable_Izquierdo.xml
 C:\Users\Europiel\Desktop\Diseño_Menu_Despegable_Izquierdo\Diseño_Menu_Despegable_Izquierdo\obj\Debug\Diseño_Menu_Despegable_Izquierdo.pdb
+C:\Users\Europiel\Desktop\Diseño_Menu_Despegable_Izquierdo\Diseño_Menu_Despegable_Izquierdo\obj\Debug\Diseño_Menu_Despegable_Izquierdo.Cotizacion.resources
