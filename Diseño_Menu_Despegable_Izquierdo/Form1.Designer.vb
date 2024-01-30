@@ -23,26 +23,26 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.menu_close = New System.Windows.Forms.PictureBox()
+        Me.Pmenu = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Pperfil = New System.Windows.Forms.PictureBox()
         Me.btnventanas = New System.Windows.Forms.Button()
         Me.btnfachada = New System.Windows.Forms.Button()
         Me.btncanceles = New System.Windows.Forms.Button()
         Me.btnespejo = New System.Windows.Forms.Button()
         Me.btndomo = New System.Windows.Forms.Button()
         Me.btnbarandales = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Pperfil = New System.Windows.Forms.PictureBox()
-        Me.menu_close = New System.Windows.Forms.PictureBox()
-        Me.Pmenu = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        CType(Me.Pperfil, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.menu_close, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Pmenu, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        CType(Me.Pperfil, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -55,6 +55,26 @@ Partial Class Form1
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1105, 40)
         Me.Panel1.TabIndex = 0
+        '
+        'menu_close
+        '
+        Me.menu_close.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.flecha_down
+        Me.menu_close.Location = New System.Drawing.Point(12, 4)
+        Me.menu_close.Name = "menu_close"
+        Me.menu_close.Size = New System.Drawing.Size(37, 33)
+        Me.menu_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.menu_close.TabIndex = 1
+        Me.menu_close.TabStop = False
+        '
+        'Pmenu
+        '
+        Me.Pmenu.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.flecha_left
+        Me.Pmenu.Location = New System.Drawing.Point(163, 4)
+        Me.Pmenu.Name = "Pmenu"
+        Me.Pmenu.Size = New System.Drawing.Size(37, 33)
+        Me.Pmenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Pmenu.TabIndex = 0
+        Me.Pmenu.TabStop = False
         '
         'Panel2
         '
@@ -71,6 +91,75 @@ Partial Class Form1
         Me.Panel2.Size = New System.Drawing.Size(200, 692)
         Me.Panel2.TabIndex = 1
         '
+        'Button4
+        '
+        Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.Black
+        Me.Button4.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.compras
+        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button4.Location = New System.Drawing.Point(3, 320)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.Button4.Size = New System.Drawing.Size(197, 38)
+        Me.Button4.TabIndex = 8
+        Me.Button4.Text = "     Ventas"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.Black
+        Me.Button3.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.proveedores
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button3.Location = New System.Drawing.Point(3, 272)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.Button3.Size = New System.Drawing.Size(197, 38)
+        Me.Button3.TabIndex = 7
+        Me.Button3.Text = "     Producto"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.Black
+        Me.Button2.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.proveedores_camion_blanco
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(3, 224)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.Button2.Size = New System.Drawing.Size(197, 38)
+        Me.Button2.TabIndex = 6
+        Me.Button2.Text = "     Proveedor"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.Black
+        Me.Button1.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.clientes
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(3, 176)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.Button1.Size = New System.Drawing.Size(197, 38)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "     Clientes"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'GroupBox1
         '
         Me.GroupBox1.Location = New System.Drawing.Point(0, 161)
@@ -78,6 +167,16 @@ Partial Class Form1
         Me.GroupBox1.Size = New System.Drawing.Size(200, 8)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
+        '
+        'Pperfil
+        '
+        Me.Pperfil.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.t_logo_deaalum
+        Me.Pperfil.Location = New System.Drawing.Point(25, 25)
+        Me.Pperfil.Name = "Pperfil"
+        Me.Pperfil.Size = New System.Drawing.Size(154, 112)
+        Me.Pperfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Pperfil.TabIndex = 1
+        Me.Pperfil.TabStop = False
         '
         'btnventanas
         '
@@ -204,105 +303,6 @@ Partial Class Form1
         Me.btnbarandales.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnbarandales.UseVisualStyleBackColor = False
         '
-        'Button4
-        '
-        Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.Black
-        Me.Button4.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.compras
-        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(3, 312)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.Button4.Size = New System.Drawing.Size(197, 38)
-        Me.Button4.TabIndex = 8
-        Me.Button4.Text = "     Ventas"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.Black
-        Me.Button3.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.proveedores
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(3, 268)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.Button3.Size = New System.Drawing.Size(197, 38)
-        Me.Button3.TabIndex = 7
-        Me.Button3.Text = "     Producto"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.proveedores_camion_blanco
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(3, 224)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.Button2.Size = New System.Drawing.Size(197, 38)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "     Proveedor"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.clientes
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(3, 180)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.Button1.Size = New System.Drawing.Size(197, 38)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "     Clientes"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Pperfil
-        '
-        Me.Pperfil.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.t_logo_deaalum
-        Me.Pperfil.Location = New System.Drawing.Point(25, 25)
-        Me.Pperfil.Name = "Pperfil"
-        Me.Pperfil.Size = New System.Drawing.Size(154, 112)
-        Me.Pperfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Pperfil.TabIndex = 1
-        Me.Pperfil.TabStop = False
-        '
-        'menu_close
-        '
-        Me.menu_close.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.flecha_down
-        Me.menu_close.Location = New System.Drawing.Point(12, 4)
-        Me.menu_close.Name = "menu_close"
-        Me.menu_close.Size = New System.Drawing.Size(37, 33)
-        Me.menu_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.menu_close.TabIndex = 1
-        Me.menu_close.TabStop = False
-        '
-        'Pmenu
-        '
-        Me.Pmenu.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.flecha_left
-        Me.Pmenu.Location = New System.Drawing.Point(163, 4)
-        Me.Pmenu.Name = "Pmenu"
-        Me.Pmenu.Size = New System.Drawing.Size(37, 33)
-        Me.Pmenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Pmenu.TabIndex = 0
-        Me.Pmenu.TabStop = False
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -322,10 +322,10 @@ Partial Class Form1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "DISEÑO DE FORMULARIO"
         Me.Panel1.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        CType(Me.Pperfil, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.menu_close, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Pmenu, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        CType(Me.Pperfil, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

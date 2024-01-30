@@ -8,7 +8,7 @@ Imports CustomControls.RJControls
 
 Public Class Form1
 
-    Dim vistaMenu As Boolean = False
+    Dim vistaMenu As Boolean = True
 
     <DllImport("Gdi32.dll", EntryPoint:="CreateRoundRectRgn")>
     Private Shared Function CreateRoundRectRgn(LR As Integer, TR As Integer, RR As Integer, BR As Integer, WE As Integer, HE As Integer) As IntPtr
@@ -59,6 +59,7 @@ Public Class Form1
     End Sub
 
     Private Sub Pmenu_Click(sender As Object, e As EventArgs) Handles Pmenu.Click
+
         If vistaMenu = False Then
             abrir()
             vistaMenu = True
@@ -192,6 +193,8 @@ Public Class Form1
             Me.Hide()
         End If
     End Sub
+
+
 End Class
 
 

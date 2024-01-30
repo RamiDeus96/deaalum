@@ -24,6 +24,7 @@ Partial Class Cotizacion
     Private Sub InitializeComponent()
         Me.Pmenu = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.menu_close = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -32,7 +33,6 @@ Partial Class Cotizacion
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Pperfil = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.btnmts = New System.Windows.Forms.Button()
         Me.btncm = New System.Windows.Forms.Button()
         CType(Me.Pmenu, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,6 +63,16 @@ Partial Class Cotizacion
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1107, 40)
         Me.Panel1.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(461, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(268, 29)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Medidas del Barandal"
         '
         'menu_close
         '
@@ -98,7 +108,7 @@ Partial Class Cotizacion
         Me.Button4.ForeColor = System.Drawing.Color.Black
         Me.Button4.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.compras
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(3, 312)
+        Me.Button4.Location = New System.Drawing.Point(3, 320)
         Me.Button4.Name = "Button4"
         Me.Button4.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.Button4.Size = New System.Drawing.Size(197, 38)
@@ -115,7 +125,7 @@ Partial Class Cotizacion
         Me.Button3.ForeColor = System.Drawing.Color.Black
         Me.Button3.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.proveedores
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(3, 268)
+        Me.Button3.Location = New System.Drawing.Point(3, 272)
         Me.Button3.Name = "Button3"
         Me.Button3.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.Button3.Size = New System.Drawing.Size(197, 38)
@@ -150,7 +160,7 @@ Partial Class Cotizacion
         Me.Button1.ForeColor = System.Drawing.Color.Black
         Me.Button1.Image = Global.Diseño_Menu_Despegable_Izquierdo.My.Resources.Resources.clientes
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(3, 180)
+        Me.Button1.Location = New System.Drawing.Point(3, 176)
         Me.Button1.Name = "Button1"
         Me.Button1.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.Button1.Size = New System.Drawing.Size(197, 38)
@@ -175,16 +185,6 @@ Partial Class Cotizacion
         Me.Pperfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Pperfil.TabIndex = 1
         Me.Pperfil.TabStop = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(461, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(268, 29)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Medidas del Barandal"
         '
         'btnmts
         '
